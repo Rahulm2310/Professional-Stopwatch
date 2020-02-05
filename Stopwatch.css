@@ -1,0 +1,128 @@
+body{
+    background:linear-gradient(to right,#23074d,#cc5333);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:700px;
+    width:100%;
+    margin:0px;
+}
+
+.container{
+    width:85%;
+}
+
+#header{
+color:white;
+text-align: center;
+font-size: 6vw;
+margin-top: 0px;
+font-family: 'Orbitron', sans-serif;
+animation-name:fadeInUp infinite;
+}
+
+#laptime{
+    text-align: right;
+    font-size:3vw;
+    color:white;
+    margin-right:20px;
+    
+
+}
+
+#lapminute, #lapsecond, #lapnanosec{
+    display: inline-block;
+    width:40px;
+}
+
+
+#timeminute, #timesecond, #timenanosec{
+    display: inline-block;
+    width:120px;
+}
+
+#time{
+    text-align: center;
+    font-size:7vw;
+    color:white;
+    /* padding:5px; */
+    
+
+}
+
+#start, #stop, #resume ,#lap,#reset{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    /* margin-left:40px; */
+
+}
+
+
+#stop, #resume,#reset{
+    display: none;
+}
+
+#laps{
+    max-height:270px;
+    overflow-y: scroll;
+    color:white;
+    font-size: 2vw;
+}
+
+.laptitle{
+    margin:0px 30px;
+    /* float:left; */
+    padding:0px;
+}
+
+.lapdetails{
+    margin:0px 20px;
+    /* float:right; */
+    text-align: right;
+    position:relative;
+    top:-40px;
+}
+
+#controls{
+    text-align: center;
+}
+
+.singlelap{
+    height:35px;
+}
+
+
+@-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  
