@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+
+        <title>Stopwatch</title>
+
+        <link href="stopwatch.css" rel="stylesheet">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Orbitron|Righteous|Russo+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div id="header">Stop-Watch</div>
+        
+
+        <div id="laptime">
+            <span id="lapminute">00</span> : <span id="lapsecond">00</span> : <span id="lapnanosec">00</span>
+
+        </div>
+
+        <div id="time">
+            <span id="timeminute">00</span>:<span id="timesecond">00</span>:<span id="timenanosec">00</span>
+
+        </div>
+
+        <div id="controls"class="row">
+            <div class="col-xs-2 col-xs-offset-4">
+                
+                <button id="start" class="btn btn-warning btn-lg">Start</button>
+                <button id="stop" class="btn btn-warning btn-lg">Stop</button>
+                <button id="resume" class="btn btn-warning btn-lg">Resume</button>
+
+
+            </div>
+
+            <div class="col-xs-2">
+                <button id="lap" class="btn btn-warning btn-lg">Lap</button>
+                <button id="reset" class="btn btn-warning btn-lg">Reset</button>
+
+            </div>
+        </div>
+
+        <div id="laps">
+
+        </div>
+
+    </div>
+
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+        <script src="stopwatch.js" type="text/javascript"></script>
+    </body>
+</html>
